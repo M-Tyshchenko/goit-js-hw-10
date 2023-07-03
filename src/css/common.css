@@ -1,5 +1,5 @@
-/* img {
-  max-width: 20%;
+img {
+  max-width: 30%;
   height: auto;
 }
 .cat-info {
@@ -9,4 +9,4 @@
 
 .breed-descr {
   width: 500px;
-} */
+}
