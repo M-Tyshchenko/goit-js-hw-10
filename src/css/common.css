@@ -1,34 +1,37 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  font-size: 12px;
 }
 
 .breed-select {
-  width: 200px;
+  max-width: 200px;
   padding: 8px;
   font-size: 16px;
   border-radius: 8px;
 }
 
 img {
-  max-width: 30%;
+  max-width: 70%;
   height: auto;
 }
 .cat-info {
   margin-top: 20px;
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .breed-title {
   font-family: inherit;
   font-weight: 700;
+  font-size: 20px;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
 .breed-descr {
-  width: 500px;
+  max-width: 500px;
 }
 .breed-descr p {
   margin-top: 0;
@@ -36,4 +39,17 @@ img {
 }
 .breed-descr p:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  img {
+    max-width: 40%;
+  }
+  .cat-info {
+    flex-direction: row;
+  }
+
+  .breed-title {
+    font-size: 40px;
+  }
 }
