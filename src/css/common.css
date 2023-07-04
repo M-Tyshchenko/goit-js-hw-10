@@ -3,19 +3,37 @@ body {
   font-weight: 400;
 }
 
+.breed-select {
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
 img {
   max-width: 30%;
   height: auto;
 }
 .cat-info {
+  margin-top: 20px;
   display: flex;
   gap: 40px;
 }
 
 .breed-title {
+  font-family: inherit;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .breed-descr {
   width: 500px;
+}
+.breed-descr p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.breed-descr p:last-child {
+  margin-bottom: 0;
 }
