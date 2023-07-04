@@ -1,4 +1,3 @@
-import { Loading } from 'notiflix/build/notiflix-loading-aio';
 import { Report } from 'notiflix/build/notiflix-report-aio';
 
 const baseUrl = `https://api.thecatapi.com/v1`;
