@@ -3,21 +3,35 @@ import {fetchBreeds, fetchCatByBreed} from "./js/cat-api";
 
 const breedSelector = document.querySelector('.breed-select');
 
-fetchBreeds();
+Loading.circle('Loading data, please wait...',
+  {
+    fontFamily: 'Roboto, sans-serif',
+    svgColor: '#dcdcdc',
+  });
+setTimeout(() => {
+    fetchBreeds();
+    setTimeout(() => {
+      Loading.remove();
+    }, 1000);
+  }, 2000); 
+
 
 breedSelector.addEventListener('change', (event) => {
   
   let breedId = event.target.value;
   console.log(breedId);
 
-  Loading.circle('Loading data, please wait...', {
+  Loading.circle('Loading data, please wait...',
+    {
     fontFamily: 'Roboto, sans-serif',
     svgColor: '#dcdcdc',
   });
 
   setTimeout(() => {
     fetchCatByBreed(breedId);
-    Loading.remove();
+    setTimeout(() => {
+      Loading.remove();
+    }, 1000);    
   }, 2000);    
 
 });
