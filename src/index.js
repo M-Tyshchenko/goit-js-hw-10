@@ -2,6 +2,7 @@ import { Loading } from 'notiflix/build/notiflix-loading-aio';
 import {fetchBreeds, fetchCatByBreed} from "./js/cat-api";
 
 const breedSelector = document.querySelector('.breed-select');
+breedSelector.hidden = true;
 
 Loading.circle('Loading data, please wait...',
   {
