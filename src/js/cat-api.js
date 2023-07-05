@@ -20,6 +20,7 @@ export function fetchBreeds() {
             option.value = `${breed.id}`;
             option.innerHTML = `${breed.name}`;
             breedSelector.appendChild(option);
+            breedSelector.hidden = false;
           })
         })
       .catch(err => {        
